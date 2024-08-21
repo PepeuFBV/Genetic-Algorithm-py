@@ -100,9 +100,9 @@ def genetic_algorithm(population_size, generations, mutation_rate):
 
 ###########################################################################
 
-population_size = 20
-generations = 25
-mutation_rate = 0.2  # 20% mutation rate
+population_size = 6
+generations = 50
+mutation_rate = 0.05  # 5% mutation rate
 
 
 best_fitness_overtime, best_individual = genetic_algorithm(population_size, generations, mutation_rate)
@@ -144,6 +144,7 @@ plt.show()
 
 # Running the genetic algorithm 100 times and changing the population size from 2 to 24
 
+generations = 75 # Increase the number of generations for better convergence
 population_sizes = np.arange(2, 25, 2)
 all_average_fitness_overtime = []
 
@@ -169,6 +170,7 @@ plt.show()
 
 # Running the genetic algorithm 100 times and changing the mutation rate from 0.1 to 0.5
 
+generations = 12 # Decrease the number of generations for better visualization
 mutation_rates = np.linspace(0.1, 0.5, 10)
 all_average_fitness_overtime = []
 
