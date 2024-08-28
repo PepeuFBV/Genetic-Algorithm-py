@@ -14,7 +14,7 @@ def bin_to_int(bin_str):
 # Decodes the binary strings to integers
 def decode(population):
     decoded = []
-    for individual in population: # decodes each individual in the population, aka the binary string to integer values
+    for individual in population: # decodes each individual in the population (binary string to integer values)
         x_bin, y_bin = "".join(map(str, individual[:3])), "".join(map(str, individual[3:])) # splits the binary string into x and y parts
         x, y = bin_to_int(x_bin), bin_to_int(y_bin) # converts the binary strings to integer values
         decoded.append((x, y))
